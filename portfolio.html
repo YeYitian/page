@@ -5,20 +5,14 @@
     <link href="main.css" rel="stylesheet" type="text/css">
     <style>
         /* 去除下划线 */
-        h1 a
-        {
-            text-decoration: none;
-        }
+    
         h2 a
         {
             text-decoration: none;
         }
 
         /* 鼠标悬停时添加下划线 */
-        h1 a:hover
-        {
-            text-decoration: underline;
-        }
+    
         h2 a:hover
         {
             text-decoration: underline;
@@ -32,7 +26,17 @@
             padding: 5px 10px;
             border: none;
             cursor: pointer;
+            text-decoration: none;
         }
+        header h1 a {
+    text-decoration: none;
+}
+
+
+/* 鼠标悬停时返回主页链接出现下划线 */
+#home-button:hover {
+    text-decoration: underline;
+}
         .footer-box {
             display: inline-block;
             border: 1px solid #ccc;
