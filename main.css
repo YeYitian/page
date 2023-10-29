@@ -1,0 +1,190 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        background-image: url('image/background.jpg');
+        background-size: cover; /* 可选，使背景图像覆盖整个屏幕 */
+        background-repeat: no-repeat; /* 可选，防止背景图像重复 */
+        background-attachment: fixed; /* 可选，使背景固定在屏幕上，不随滚动滚动 */
+        background-color: rgba(255, 255, 255, 0.8); /* 使用 rgba 值来定义背景颜色和透明度 */
+    }
+
+    header {
+        background-color: #333;
+        text-shadow: 2px 2px 4px #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        background-image: url('image/banner.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 15%;
+        font-family: "行楷", "STXingkai", "STXinKaiTi", cursive, sans-serif;
+        background-color: rgba(255, 255, 255, 0.8); /* 使用 rgba 值来定义背景颜色和透明度 */
+        opacity: 0.8
+    }
+
+    .divider {
+        width: 100%; /* 根据需要设置宽度 */
+        height: 10px; /* 根据需要设置高度 */
+    }
+
+
+    nav {
+        background-image: url('image/blank.png'); /* 替换 'path/to/blank.png' 为图像的正确路径 */
+        width: 100%; /* 根据需要设置宽度 */
+        height: 30px; /* 根据需要设置高度 */
+        background-size: auto 30px;
+        background-repeat: no-repeat; /* 不重复背景图片 */
+    }
+    
+    nav ul {
+        list-style: none;
+    }
+    
+    nav li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav a {
+    font-size: 20px; /* 设置字体大小小于 25px */
+    color: white; /* 设置字体颜色为白色 */
+    text-decoration: none; /* 可选，去掉链接的下划线 */
+    }
+    
+    nav a:hover {
+        text-decoration: underline; /* 鼠标悬停时添加下划线效果 */
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7); /* 鼠标悬停时添加字体阴影效果 */
+    }
+
+    section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px 0 0 0;
+    position: relative;
+}
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #about {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border-top: 2px solid #000; /* 这里的#000表示黑色 */
+        border-left: 2px solid #000; /* 这里的#000表示黑色 */
+        border-bottom: 2.5px solid #000; /* 这里的#000表示黑色 */
+        border-right: 2.5px solid #000; /* 这里的#000表示黑色 */
+        border-radius: 10px 0 0 0;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.6); /* 使用 rgba 值来定义背景颜色和透明度 */
+
+        transition: background-position 2.5s;
+        background-position: 100% 0;
+
+    }
+
+
+    #portfolio:hover,
+    #contact:hover,
+    #about:hover {
+
+        background: linear-gradient(155deg,  #0077b3 , #66ccff, #d9eefc,#ffffff);
+        background-size: 200% 200%;
+        background-position: 0 100%;
+    }
+    #portfolio:not(:hover),
+    #contact:not(:hover),
+    #about:not(:hover) {
+        background-color: rgba(255, 255, 255, 0.6);
+        background-size: 200% 200%;
+        background-position: 100% 0;
+        transition: background 0.5s; /* 修改为background动画 */
+    }
+    .bottom-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .inner-box {
+        max-width: 100%;
+        max-height: 100%;
+        max-width: 100%; /* 最大宽度不超过母物件 */
+        max-height: 100%; /* 最大高度不超过母物件 */
+        overflow: hidden; /* 隐藏超出的内容 */
+        position: relative;
+    }
+    .inner-image {
+        width: 300px; /* 图片最大宽度不超过内框 */
+        height: 80px; /* 图片最大高度不超过内框 */
+        position: relative;
+        object-fit: fill; /* 解除图像长宽比例限制 */
+        margin: 0 auto; /* 水平居中图片 */
+        display: block; /* 去除默认的行内元素间距 */
+    }
+    .inner-image1 {
+        width: 600px; /* 设置宽度为200像素 */
+        height: 150px; /* 设置高度为150像素 */
+        margin: 0 auto; /* 水平居中图片 */
+        display: block; /* 去除默认的行内元素间距 */
+        
+    }
+    .inner-box .text-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px; /* 调整内边距以控制文本位置 */
+    }
+    
+    .inner-box p {
+        margin: 0;
+        text-align: center; /* 让文本居中 */
+    }
+    #portfolio,
+    #contact {
+        flex: 1; /* 让 "作品集" 和 "联系我" 部分各占据一半的位置 */
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+
+        border-top: 2px solid #000; /* 这里的#000表示黑色 */
+        border-left: 2px solid #000; /* 这里的#000表示黑色 */
+        border-bottom: 2.5px solid #000; /* 这里的#000表示黑色 */
+        border-right: 2.5px solid #000; /* 这里的#000表示黑色 */
+        border-radius: 10px 0 0 0;
+        position: relative;
+        border-radius: 10px 0 0 0; /* 添加圆角效果*/
+        background-color: rgba(255, 255, 255, 0.6); /* 使用 rgba 值来定义背景颜色和透明度 */
+        transition: background-position 2.5s;
+        background-position: 100% 0;
+    }
+    .portfolio-item {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.6); /* 使用 rgba 值来定义背景颜色和透明度 */
+    }
+    
+    .portfolio-item img {
+        max-width: 100%;
+        height: auto;
+    }
+    .work-image {
+        max-height: 300px; /* 设置高度为150像素 */
+        display: block; /* 去除默认的行内元素间距 */
+        
+    }
