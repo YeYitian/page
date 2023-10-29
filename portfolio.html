@@ -27,15 +27,27 @@
             border: none;
             cursor: pointer;
             text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.6);
+            background-size: 200% 200%;
+            background-position: 100% 0;
+            transition: background 0.5s; /* 修改为background动画 */
         }
         header h1 a {
     text-decoration: none;
 }
-
+    #home-button:not(:hover) {
+        background-color: rgba(255, 255, 255, 0.6);
+        background-size: 200% 200%;
+        background-position: 100% 0;
+        transition: background 0.5s; /* 修改为background动画 */
+    }
 
 /* 鼠标悬停时返回主页链接出现下划线 */
-#home-button:hover {
+    #home-button:hover {
     text-decoration: underline;
+    background: linear-gradient(155deg,  #0077b3 , #66ccff, #d9eefc,#ffffff);
+        background-size: 200% 200%;
+        background-position: 0 100%;
 }
         .footer-box {
             display: inline-block;
