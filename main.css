@@ -39,7 +39,9 @@
         background-size: auto 30px;
         background-repeat: no-repeat; /* 不重复背景图片 */
     }
-    
+    .no-underline {
+        text-decoration: none;
+    }
     nav ul {
         list-style: none;
     }
@@ -90,7 +92,11 @@
 
     }
 
-
+    .translation {
+        font-size: smaller;
+        color: #999;
+        text-decoration: none;
+    }
     #portfolio:hover,
     #contact:hover,
     #about:hover {

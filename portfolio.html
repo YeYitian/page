@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>作品集</title>
+    <title>作品集 - Portfolio</title>
     <link href="main.css" rel="stylesheet" type="text/css">
     <style>
         /* 去除下划线 */
-    
         h2 a
         {
             text-decoration: none;
         }
 
         /* 鼠标悬停时添加下划线 */
-    
         h2 a:hover
         {
             text-decoration: underline;
         }
+
         #home-button {
             position: absolute;
             top: 10px;
@@ -32,23 +31,26 @@
             background-position: 100% 0;
             transition: background 0.5s; /* 修改为background动画 */
         }
-        header h1 a {
-    text-decoration: none;
-}
-    #home-button:not(:hover) {
-        background-color: rgba(255, 255, 255, 0.6);
-        background-size: 200% 200%;
-        background-position: 100% 0;
-        transition: background 0.5s; /* 修改为background动画 */
-    }
 
-/* 鼠标悬停时返回主页链接出现下划线 */
-    #home-button:hover {
-    text-decoration: underline;
-    background: linear-gradient(155deg,  #0077b3 , #66ccff, #d9eefc,#ffffff);
-        background-size: 200% 200%;
-        background-position: 0 100%;
-}
+        header h1 a {
+            text-decoration: none;
+        }
+
+        #home-button:not(:hover) {
+            background-color: rgba(255, 255, 255, 0.6);
+            background-size: 200% 200%;
+            background-position: 100% 0;
+            transition: background 0.5s; /* 修改为background动画 */
+        }
+
+        /* 鼠标悬停时返回主页链接出现下划线 */
+        #home-button:hover {
+            text-decoration: underline;
+            background: linear-gradient(155deg, #0077b3, #66ccff, #d9eefc, #ffffff);
+            background-size: 200% 200%;
+            background-position: 0 100%;
+        }
+
         .footer-box {
             display: inline-block;
             border: 1px solid #ccc;
@@ -60,51 +62,58 @@
 </head>
 <body>
     <header>
-        <h1>我的作品集(点击名字可下载或跳转)</h1>
-        <a id="home-button" href="index.html">返回主页</a>
+        <h1>我的作品集(点击名字可下载或跳转) - My Portfolio (Click on names to download or navigate)</h1>
+        <a id="home-button" href="index.html">返回主页 - Return to Homepage</a>
     </header>
     
     <section class="portfolio-item">
-        <h2><a href="doc\相关文档.zip" download>若干相关文档及清单</a></h2>
+        <h2><a href="doc\相关文档.zip" download>若干相关文档及清单 - Various Related Documents and Lists</a></h2>
         <p>向来万里意，今在一窗间。</p>
-        <img src="image\work\Work1.png" alt="文档" class="work-image">
+        <p>Always had far-reaching intentions, now within a window.</p>
+        <img src="image\work\Work1.png" alt="文档 - Documents" class="work-image">
     </section>
     <section class="portfolio-item">
-        <h2><a href="https://www.bilibili.com/video/BV1WV411L7YG/" >独立项目-Toyester</a></h2>
+        <h2><a href="https://www.bilibili.com/video/BV1WV411L7YG/" >独立项目-Toyester - Independent Project - Toyester</a></h2>
         <p>一款类幸存者游戏，旨在通过装备BD，赋予刷子游戏更多的策略集选择和目标感，目前正在筹备taptap测试。</p>
+        <p>A game similar to Survivor, aiming to provide the brush game with more strategic options and a sense of purpose through BD equipment. Currently preparing for taptap testing.</p>
         <img src="image\work\Work2.png" alt="Toyester" class="work-image">
     </section>
     <section class="portfolio-item">
-        <h2><a href="https://www.bilibili.com/video/BV1mF411p7Gx/" >GJ项目-无妄箓</a></h2>
+        <h2><a href="https://www.bilibili.com/video/BV1mF411p7Gx/" >GJ项目-无妄箓 - GJ Project - Wuwang Lu</a></h2>
         <p>一款横版解密闯关游戏，GJ作品，主题为二元性。通过阴阳二元的不同世界联动，回归至一元的本体通关。</p>
-        <img src="image\work\Wuwang.png" alt="独立项目-无妄箓" class="work-image">
+        <p>A side-scrolling decryption and clearance game, GJ work, with a theme of duality. Through the linkage of yin and yang dualism in different worlds, return to the essence of unity to pass.</p>
+        <img src="image\work\Wuwang.png" alt="独立项目-无妄箓 - Independent Project - Wuwang Lu" class="work-image">
     </section>
     <section class="portfolio-item">
-        <h2><a href="https://www.bilibili.com/video/BV16f4y1T7oj/?share_source=copy_web&vd_source=8cc8d59d705dfa344237e911dac4c061" >嵌入式项目-基于可见光通信的智能导览系统</a></h2>
+        <h2><a href="https://www.bilibili.com/video/BV16f4y1T7oj/?share_source=copy_web&vd_source=8cc8d59d705dfa344237e911dac4c061" >嵌入式项目-基于可见光通信的智能导览系统 - Embedded Project - Intelligent Guidance System Based on Visible Light Communication</a></h2>
         <p>通过可见光频闪和摄像机帘式快门特性，构建出的可见光通信交互方案。实现移步换景，阅后即焚，文件加密传输等多重功能。<br/>基于可见光适宜以一对多的单向传输或以一对一的双向传输特性，设置了博物馆这一应用场景。该项目共获两项专利</p>
-        <img src="image\work\kejianguang.jpg" alt="可见光" class="work-image">
+        <p>An interactive solution for visible light communication, created through visible light frequency flashing and camera curtain-shutter characteristics. It achieves features like changing scenes with each step, self-destructing messages, and encrypted file transmission. Suitable for one-to-many unidirectional or one-to-one bidirectional transmission using visible light, with a focus on museum applications. The project has obtained two patents.</p>
+        <img src="image\work\kejianguang.jpg" alt="可见光 - Visible Light" class="work-image">
     </section>
     <section class="portfolio-item">
-        <h2><a href="doc\一些外团和文学相关内容展示.zip" download>文学相关选集</a></h2>
+        <h2><a href="doc\一些外团和文学相关内容展示.zip" download>文学相关选集 - Literature-Related Selections</a></h2>
         <p>虞美人·溯洄<br/>叶翊天<br/>幽明小径苔芜晦，未惹游人醉。<br/>无言暂释宿妆华。飒沓清风残雪、霁流霞。<br/>阑珊信典摞书塌。心剑披霜蜡。<br/>幕帷清冷迫门厅。满溢杯盘草煮、意难兴。</p>
-        <img src="image\work\Mo.jpg" download alt="文档" class="work-image">
+        <p>Yu Meiren - Tracing the Current<br/>Yi Tian<br/>In the secluded and bright pathway, mosses obscure the way, untouched by wanderers.<br/>In silence, the makeup of dawn is temporarily set free. The brisk and clear breeze leaves remnants of snow, with the rosy clouds at dusk.<br/>The fading lights rest upon a stack of books. With a heart like a sword and frosty wax on the armor.<br/>The curtain is clean and cold, pressing on the doorway. Cups and plates overflow with grassy brew, but the emotions are hard to stir.</p>
+        <img src="image\work\Mo.jpg" download alt="文档 - Documents" class="work-image">
     </section>
     <section class="portfolio-item">
-        <h2><a href="两不疑实机演示.mp4" download>独立项目-两不疑</a></h2>
+        <h2><a href="https://www.bilibili.com/video/BV1Wg4y1o7Sm/">独立项目-两不疑 - Independent Project - Liang Buyi</a></h2>
         <p>重叙事，略带解密的多结局音游。故事取材于我之前的一个剧本作品。</p>
-        <img src="image\work\封面.jpg" alt="两不疑" class="work-image">
+        <p>A narrative-heavy, slightly puzzle-solving multi-ending music game. The story is based on a script I wrote before.</p>
+        <img src="image\work\封面.jpg" alt="两不疑 - Liang Buyi" class="work-image">
     </section>
     <section class="portfolio-item">
-        <h2><a href="doc\策划案（肉鸽玩法部分）1.22更新.xlsx" >独立项目-代行</a></h2>
+        <h2><a href="doc\策划案（肉鸽玩法部分）1.22更新.xlsx" >独立项目-代行 - Independent Project - Daixing</a></h2>
         <p>一款融合了DBG机制和身份推理类游戏的电子桌游，该作品最早是想尝试当时刚兴起的AI绘画。并制定了中式克苏鲁的美术基调，最终在完成部分程序工作后由于UI美术原因弃坑。</p>
-        <img src="image\work\Work4.png" alt="代行" class="work-image">
+        <p>An electronic board game that combines DBG mechanics and identity deduction gameplay. The initial idea for this project was to experiment with AI art, which was just emerging at the time. The art style was influenced by Chinese Lovecraft, but the project was eventually abandoned due to UI art reasons after completing some programming work.</p>
+        <img src="image\work\Work4.png" alt="代行 - Daixing" class="work-image">
     </section>
     <section class="portfolio-item">
-        <h2><a href="http://www.why.com.cn/wx/article/2021/08/11/16286808231322616156.html" >桌游项目-火种</a></h2>
+        <h2><a href="http://www.why.com.cn/wx/article/2021/08/11/16286808231322616156.html" >桌游项目-火种 - Board Game Project - Spark</a></h2>
         <p>一款聚焦于土地革命时期，反围剿战争的DBG+战棋机制融合桌游，该项目目前由上海市党校进行研讨推广，因此受到过青年报采访。</p>
-        <img src="image\work\Work3.png" alt="火种" class="work-image">
+        <p>A board game that focuses on the Land Revolution period and integrates DBG and war chess mechanics. The project is currently being promoted and discussed by the Shanghai Party School and has been interviewed by the Youth Daily.</p>
+        <img src="image\work\Work3.png" alt="火种 - Spark" class="work-image">
     </section>
-
 
     <!-- 添加更多作品项目的部分 -->
 
@@ -112,6 +121,7 @@
 <footer>
     <div class="footer-box">
         <p>部分文档不便公开展示，故采用加密压缩包形式上传，解压密码请联系本人获得。</p>
+        <p>Some documents are not publicly displayed for convenience and are uploaded in encrypted compressed format. Please contact me to obtain the decompression password.</p>
     </div>
 </footer>
 </html>
